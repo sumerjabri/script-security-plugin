@@ -74,16 +74,17 @@ public final class SandboxInterceptor extends GroovyInterceptor {
 
     /** should be synchronized with {@link DgmConverter} */
     private static final Class<?>[] DGM_CLASSES = {
+	    // TODO: Review these and align with Groovy 4
         DefaultGroovyStaticMethods.class,
         DefaultGroovyMethods.class,
         StringGroovyMethods.class,
-        SwingGroovyMethods.class,
-        XmlGroovyMethods.class,
+        //SwingGroovyMethods.class,
+        //XmlGroovyMethods.class,
         EncodingGroovyMethods.class,
-        DateGroovyMethods.class,
+        //DateGroovyMethods.class,
         ProcessGroovyMethods.class,
         IOGroovyMethods.class,
-        NioGroovyMethods.class,
+        //NioGroovyMethods.class,
         ResourceGroovyMethods.class,
         EncodingGroovyMethods.class,
         SqlExtensions.class
